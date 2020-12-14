@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(n, k = 30)
-  return false if n < 2
+  #return false if n < 2
   return true if n == 2
 
   d = n - 1
