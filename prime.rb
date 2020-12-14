@@ -23,7 +23,7 @@ def exp_mod(base, exp, modulo)
   if exp == 0
     return 1
   elsif exp.even?
-    return modulo
+    return modularSquare(exp_mod(base, exp / 2, modulo), modulo)
   else
     return (base * (exp_mod(base, (exp - 1), modulo))) % modulo
   end
