@@ -1,18 +1,25 @@
 # Add  code here!
-def prime?(int, k = 7)
-  if int <= 1 || int == 4
-    return false
-  end
+# def get_coprime(n):
+#     while True:
+#         coprime = random.randrange(n)
+#         if math.gcd(coprime, n) == 1:
+#             return coprime
+#
+#
+# def fermat_primality(n, count = 1):
+#     for _ in range(count):
+#         a = get_coprime(n)
+#         if (a ** (n-1)) % n != 1:
+#             return False
+#     return True
 
-  if int <= 3
-    return true
-  end
-
-  k.times do
-    a = 2 + rand() % (int - 4)
-
-    if power(a, int - 1, int)
+def prime?(n, count = 1)
+  count.times do
+    a = get_coprime(n)
+    if (a ** (n - 1)) % n != 1
       return false
     end
   end
+
+  true
 end
