@@ -1,6 +1,5 @@
 # Add  code here!
 def prime?(n, k = 30)
-  #return false if n < 2
   return true if n == 2
 
   d = n - 1
@@ -24,4 +23,16 @@ def prime?(n, k = 30)
   end
 
   true
+end
+
+def mod_exp(base, exp, n)
+  product = 1
+  base = base % n
+  while exp != 0 do
+    product = (product * base) % n if exp & 1 == 1
+    exp = exp >> 1
+    base = (base * base) % n
+  end
+
+  product
 end
