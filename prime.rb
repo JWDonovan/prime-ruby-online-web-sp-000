@@ -12,5 +12,5 @@ def prime?(int, count = 7)
 end
 
 def fermatTest(int)
-  
+
 end
