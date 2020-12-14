@@ -10,3 +10,7 @@ def prime?(int, count = 7)
 
   return false
 end
+
+def fermatTest(int)
+  
+end
