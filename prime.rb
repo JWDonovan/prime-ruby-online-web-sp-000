@@ -12,5 +12,7 @@ def prime?(int, count = 7)
 end
 
 def fermatTest(int)
-
+  def pick(d, n)
+    return d == exp_mod(d, n, n)
+  end
 end
