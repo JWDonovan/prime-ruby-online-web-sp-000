@@ -18,3 +18,13 @@ def fermatTest(int)
 
   return pick(1 + rand(int), int)
 end
+
+def exp_mod(base, exp, modulo)
+  if exp == 0
+    return 1
+  elsif exp.even?
+    return modulo
+  else
+    return (base * (exp_mod(base, (exp - 1), modulo))) % modulo
+  end
+end
