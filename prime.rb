@@ -16,5 +16,5 @@ def fermatTest(int)
     return d == exp_mod(d, n, n)
   end
 
-  return pick(Random.rand(11), int)
+  return pick(1 + rand(int), int)
 end
